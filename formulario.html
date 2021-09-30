@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link de CSS-->
+    <link href="CSS/formulario.css" rel="stylesheet" type="text/css">
+    <script src="Javas/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <center> <h1> Formulario de ingreso </h1>
+        <form class="my-form">
+            <div class = "container"><br>
+                <select name="tipo_doc">
+                    <option selected disabled>Seleccione una opción</option>
+                    <option value="CC">Cédula de ciudadanía</option>
+                    <option value="TI">Tarjeta de identidad</option>
+                    <option value="CE">Cédula extranjera</option>
+                    <option value="PA">Pasaporte</option>
+                </select><br>
+            </div><br>
+            <div class="grid grid-2">
+                <input type = "text" placeholder="Nombre" required>
+                <input type = "text" placeholder="Usuario" required>
+            </div> <br>
+            <div class="grid grid-2">
+                <input type = "email" placeholder="Correo" required>
+                <input type = "number" placeholder="Telefono" required>
+            </div><br>
+            <textarea placeholder="Observaciones"></textarea><br>
+            <input type="checkbox" id="terms">
+            <label for = "terms">Acepto el manejo de datos</label>
+            <div class="grid grid-3"><br>
+                <div class="required-msg">Obligatorio</div>
+                <button class="btn-grid" type="submit" disabled>
+                    <span class="back">Enviar
+                    </span>
+                </button>
+                <button class="btn-grid" type="submit" disabled>
+                    <span class="back">Eliminar
+                    </span>
+                </button>
+            </div>
+        </form>
+    </center>
+</body>
+</html>
