@@ -1,0 +1,50 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+input, select, textarea, button{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+button,label{
+    cursor: pointer;
+    color: rgb(2, 88, 128);
+}
+
+select{
+    appearance: none;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+select:-moz-focusring{
+    color: transparent !important;
+    text-shadow: 0 0 0 var(--white);
+}
+
+textarea{
+    resize: none;
+}
+
+@media screen and (min-width:600px) {
+    /*.my-form .grid{
+        display: grid;
+        grid-gap: 1.5 rem;
+    }*/
+
+    .my-form .grid-2{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .my-form .grid-3{
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+}
